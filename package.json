@@ -9,14 +9,19 @@
     "preview": "vite preview",
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix",
-    "lint": "run-s lint:*"
+    "lint": "run-s lint:*",
+    "server": "json-server --watch ./src/components/jobs.json --port 8000"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
+    "axios": "^1.10.0",
+    "json-server": "1.0.0-beta.3",
     "postcss-import": "^16.1.1",
     "primeicons": "^7.0.0",
     "tailwindcss": "^4.1.10",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1",
+    "vue-spinner": "^1.0.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
